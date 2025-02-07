@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Anual</title>
+    <style>
+        body {
+            background-color: #FDEEDC;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #D6ECEF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Unidade relativa para responsividade */
+            max-width: 600px; /* Limite máximo para maior controle */
+        }
+
+        h1 {
+            font-size: 1.5em; /* unidade de mendida relativa */
+            text-align: center;
+        }
+
+        table {
+            width: auto;
+            border-collapse: collapse;
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid #ccc;
+            table-layout: fixed; /* Mantém um layout fixo */
+            background-color: white;
+        }
+
+        /* células da tabela */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* linha do cabeçalho */
+        thead th {
+            background-color: #f8f8f8;
+            text-transform: uppercase;
+            font-size: 1em; /* legibilidade através dos dispositivos */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Relatório Anual de Produção de Peças</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Período de Produção</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Placa mãe NVIDIA</td>
+                    <td>500</td>
+                    <td>1.600,00</td>
+                    <td>03/01/2023 - 31/03/2023</td>
+                </tr>
+                <tr>
+                    <td>Fonte Gamemax</td>
+                    <td>450</td>
+                    <td>350,00</td>
+                    <td>02/01/2023 - 29/02/2023</td>
+                </tr>
+                <tr>
+                    <td>Processador AMD 3.7GHz</td>
+                    <td>1.000</td>
+                    <td>587,00</td>
+                    <td>02/01/2023 - 29/02/2023</td>
+                </tr>
+                <tr>
+                    <td>Memória DDR4 8G</td>
+                    <td>2.000</td>
+                    <td>200,00</td>
+                    <td>01/01/2023 - 31/01/2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Reposta à pergunta: Se você tivesse usado unidades de medidas absolutas, e configurasse a largura da
+                    tabela com 1500px, o que aconteceria no momento da exibição da tabela em uma tela de celular?
+                    Já que um smartphone comum tem 1920 (altura) x 1080 (largura) pixels,
+                    a tabela não seria possível de ser totalmente vizualida em escala default (100),
+                    seundo um zoom out necessário para a vizualização total da tabela--> 
+</body>
+</html>

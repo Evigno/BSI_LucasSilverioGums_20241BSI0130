@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <!-- Importando a fonte Nunito do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo dos campos de entrada e textarea */
+        input[type="text"], input[type="password"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        /* Botão de envio */
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #27ae60;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* evento hover: passar o mouse em cima */
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+    <!-- Estrutura do formulário -->
+    <form action="#" method="post">
+        <h1>Cadastrar usuário</h1>
+
+        <!-- Seção 1: Dados pessoais -->
+        <h2>1. Dados pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="confirmaSenha">Confirma senha:</label>
+        <input type="password" id="confirmaSenha" name="confirmaSenha">
+
+        <p>Idade:</p>
+        <label>
+            <input type="radio" name="idade" value="acima17"> Acima 17
+        </label> <br>
+        <label>
+            <input type="radio" name="idade" value="abaixo17"> Abaixo ou igual 17
+        </label>
+
+        <!-- Seção 2: Perfil -->
+        <h2>2. Perfil</h2>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao"></textarea>
+
+        <label for="perfil">Perfil trabalho:</label>
+        <select id="perfil" name="perfil">
+            <option value="frontend">Front-End Developer</option>
+            <option value="backend">Back-End Developer</option>
+            <option value="designer">Designer</option>
+            <option value="analista">Analista</option>
+        </select>
+
+        <p>Interesses:</p>
+        <label>
+            <input type="checkbox" name="interesse" value="programador"> Programador
+        </label> <br>
+        <label>
+            <input type="checkbox" name="interesse" value="design"> Design
+        </label> <br>
+        <label>
+            <input type="checkbox" name="interesse" value="analista"> Analista
+        </label> <br> <br>
+
+        <button type="submit">Enviar dados</button>
+    </form>
+</body>
+</html>
